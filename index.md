@@ -1,17 +1,17 @@
 ---
 layout: default
-title: David Noh | Computer Science ePortfolio
+title: David Noh
 ---
 
 # David Noh
 
-**Computer Science, B.S. | Southern New Hampshire University**
+**Computer Science, B.S., Southern New Hampshire University**
 
 This portfolio documents a single application taken apart and rebuilt at three
 levels: its architecture, its algorithms, and its database. Each section covers what
 the original code did, what was wrong with it, and what changed.
 
-[GitHub](https://github.com/dnsnhu · [Email](mailto:david.noh@snhu.edu)
+[GitHub](https://github.com/dnsnhu) / [Email](mailto:david.noh@snhu.edu)
 
 ---
 
@@ -27,8 +27,9 @@ software engineering and databases, and security.
 
 ## The Artifact
 
-**Weight Tracking Application** — Android, Java, SQLite
-Originally submitted as Project Three in CS 360: Mobile Architecture and Programming.
+**Weight Tracking Application**
+Android, Java, SQLite. Originally submitted as Project Three in CS 360: Mobile
+Architecture and Programming.
 
 The original application works, and that is roughly all that can be said for it.
 Activities call the database directly from click listeners on the UI thread. The
@@ -40,7 +41,7 @@ The app stores data it never computes anything from.
 Each of those is a different kind of problem, which is why one artifact carries all
 three enhancement categories.
 
-[Original source](./artifact/original/) | [Enhanced source](./artifact/enhanced/)
+[Original source](./artifact/original/) / [Enhanced source](./artifact/enhanced/)
 
 ---
 
@@ -64,7 +65,7 @@ Restructuring the application into an MVVM architecture with a repository layer 
 ViewModels, moving all I/O off the UI thread, centralizing validation, and replacing
 plaintext password storage with salted PBKDF2 hashing and a constant-time comparison.
 
-[Read the narrative](./narratives/enhancement-one/) | [View the changes](#)
+[Read the narrative](./narratives/enhancement-one/) / [View the changes](#)
 
 ---
 
@@ -78,7 +79,7 @@ implementation and a linear one. The running sum computes the moving average in 
 regardless of window size, and a monotonic deque gives amortized O(1) per element for
 the windowed extremes.
 
-[Read the narrative](./narratives/enhancement-two/) | [View the changes](#)
+[Read the narrative](./narratives/enhancement-two/) / [View the changes](#)
 
 ---
 
@@ -92,7 +93,7 @@ timestamps as sortable integers, adding a composite index on the application's p
 access path, moving aggregates into SQL, and replacing the destructive upgrade path
 with a tested migration.
 
-[Read the narrative](./narratives/enhancement-three/) | [View the changes](#)
+[Read the narrative](./narratives/enhancement-three/) / [View the changes](#)
 
 ---
 
