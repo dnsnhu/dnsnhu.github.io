@@ -1,0 +1,113 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* ---- Palette ----------------------------------------------------------
+   ink     #1f2328   body text
+   muted   #59636e   secondary text, placeholders
+   rule    #d8dee4   dividers and table borders
+   link    #0a4f8a   restrained navy, high contrast on white
+   ---------------------------------------------------------------------- */
+
+.markdown-body {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 4rem 1.5rem 6rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  color: #1f2328;
+}
+
+.markdown-body h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.25rem;
+  padding: 0;
+  border: none;
+}
+
+.markdown-body h2 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin: 3rem 0 0.75rem;
+  padding: 0;
+  border: none;
+}
+
+.markdown-body h1 + p strong {
+  font-weight: 500;
+  color: #59636e;
+}
+
+.markdown-body p {
+  margin: 0 0 1rem;
+}
+
+.markdown-body em {
+  color: #59636e;
+  font-style: normal;
+}
+
+.markdown-body hr {
+  height: 1px;
+  margin: 2.5rem 0;
+  background: #d8dee4;
+  border: none;
+}
+
+.markdown-body a {
+  color: #0a4f8a;
+  text-decoration: none;
+  border-bottom: 1px solid #c3d4e3;
+}
+
+.markdown-body a:hover {
+  border-bottom-color: #0a4f8a;
+}
+
+.markdown-body a:focus-visible {
+  outline: 2px solid #0a4f8a;
+  outline-offset: 2px;
+}
+
+.markdown-body table {
+  display: table;
+  width: 100%;
+  margin: 1rem 0;
+  border-collapse: collapse;
+}
+
+.markdown-body th,
+.markdown-body td {
+  padding: 0.6rem 0.75rem 0.6rem 0;
+  text-align: left;
+  border: none;
+  border-bottom: 1px solid #d8dee4;
+}
+
+.markdown-body th {
+  font-weight: 600;
+}
+
+.markdown-body tr,
+.markdown-body tr:nth-child(2n) {
+  background: transparent;
+}
+
+.markdown-body sub {
+  color: #59636e;
+  font-size: 0.8125rem;
+}
+
+@media (max-width: 40rem) {
+  .markdown-body {
+    padding: 2.5rem 1.25rem 4rem;
+  }
+  .markdown-body h1 {
+    font-size: 1.625rem;
+  }
+}
