@@ -1,0 +1,29 @@
+title: David Noh | Computer Science ePortfolio
+description: >-
+  Computer science ePortfolio for the Southern New Hampshire University capstone,
+  showing one Android application rebuilt across software design, algorithms, and
+  the data layer.
+theme: jekyll-theme-primer
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  hard_wrap: false
+
+permalink: pretty
+
+# Empty for a user site served at the domain root (dnsnhu.github.io).
+# For a project repository, set this to "/<repository-name>" and the
+# internal links follow automatically.
+baseurl: ""
+
+plugins:
+  - jekyll-seo-tag
+
+exclude:
+  - build_site.py
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

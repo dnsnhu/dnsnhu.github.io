@@ -1,0 +1,102 @@
+---
+---
+
+@import "jekyll-theme-primer";
+
+/* Readability. Primer's default container runs wide for long prose. */
+.container-lg {
+  max-width: 54rem;
+}
+
+.markdown-body {
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+}
+
+.markdown-body h2 {
+  margin-top: 2rem;
+}
+
+/* Section separators carry most of the page structure, so give them room. */
+.markdown-body hr {
+  height: 1px;
+  margin: 2.5rem 0;
+  background-color: #d8dee4;
+}
+
+/* Collapsible source files on the artifact pages. */
+.markdown-body details {
+  border: 1px solid #d8dee4;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+  background-color: #f6f8fa;
+}
+
+.markdown-body details > summary {
+  cursor: pointer;
+  padding: 0.5rem 0.75rem;
+  font-weight: 600;
+  list-style: none;
+}
+
+.markdown-body details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.markdown-body details > summary::before {
+  content: "\25B8";
+  display: inline-block;
+  width: 1rem;
+  color: #57606a;
+}
+
+.markdown-body details[open] > summary::before {
+  content: "\25BE";
+}
+
+.markdown-body details[open] > summary {
+  border-bottom: 1px solid #d8dee4;
+}
+
+.markdown-body details > pre,
+.markdown-body details > div > pre {
+  margin: 0;
+  border: 0;
+  border-radius: 0 0 6px 6px;
+  max-height: 32rem;
+  overflow: auto;
+  font-size: 12.5px;
+  line-height: 1.5;
+}
+
+/* Source listings on the original page are not collapsed, so cap their height too. */
+.markdown-body > pre,
+.markdown-body > div.highlighter-rouge pre {
+  max-height: 32rem;
+  overflow: auto;
+  font-size: 12.5px;
+}
+
+.markdown-body table {
+  display: table;
+  width: 100%;
+}
+
+.markdown-body table td:first-child {
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+@media (max-width: 640px) {
+  .markdown-body table {
+    display: block;
+    overflow-x: auto;
+  }
+  .markdown-body table td:first-child {
+    white-space: normal;
+  }
+}
